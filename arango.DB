@@ -7,6 +7,8 @@ sudo systemctl start arangodb3    # Start and Enable the ArangoDB Service:
 sudo systemctl enable arangodb3
 sudo systemctl status arangodb3  #Check if the service is running:
 sudo journalctl -xe  # Troubleshooting:  Ensure you are downloading the correct architecture version (amd64 for 64-bit systems).If you still encounter issues with the service, check logs:
+arangosh
+
 
 
 
