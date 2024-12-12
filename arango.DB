@@ -1,0 +1,13 @@
+#package architecture of system is using amd64 architecture (which is common for most x86_64 machines).
+#package for ArangoDB amd64 architecture.
+wget https://download.arangodb.com/arangodb312/DEBIAN/amd64/arangodb3_3.12.3-1_amd64.deb
+sudo dpkg -i arangodb3_3.12.3-1_amd64.deb
+sudo apt -f install   # Fix Dependencies (if any): If there are any missing dependencies, run:
+sudo systemctl start arangodb3    # Start and Enable the ArangoDB Service:
+sudo systemctl enable arangodb3
+sudo systemctl status arangodb3  #Check if the service is running:
+sudo journalctl -xe  # Troubleshooting:  Ensure you are downloading the correct architecture version (amd64 for 64-bit systems).If you still encounter issues with the service, check logs:
+
+
+
+
