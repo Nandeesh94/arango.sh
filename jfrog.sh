@@ -10,3 +10,4 @@ cd bin
 ls -l
 chmod +x artifactory.sh
 sudo ./artifactory.sh start
+sudo ./artifactory.sh status
